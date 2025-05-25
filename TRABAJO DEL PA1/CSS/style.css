@@ -1,0 +1,211 @@
+:root {
+    --color-rojo: #e10600;
+  }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000; 
+    color: #ffffff; 
+}
+main {
+    padding-top: 70px; 
+}
+/* Encabezados */
+h1, h2, h3 {
+    color: #e10600;
+    margin-bottom: 0.5em;
+}
+
+/* Enlaces */
+a {
+    color: #e10600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4d4d;
+}
+
+/* Navegación */
+nav ul {
+    
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    background-color: #1a1a1a; 
+    margin: 0;
+    border-radius: 10px;
+}
+
+nav ul a {
+    display: block;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+header img {
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #120000; 
+    border-bottom: 2px solid var(--color-rojo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    height: 70px; 
+}
+
+/* Secciones */
+section {
+
+    padding: 2rem;
+    border-bottom: 1px solid #330000;
+}
+#presentacion{
+    background: linear-gradient(to bottom, #000000 20%, #ff0000 100%),
+    url('IMAGEN/LOGO\ LAIX.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:600px;
+    text-align: center;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #presentacion {
+      height: 650px;
+    }
+  }
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e10600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #ff4d4d;
+  }
+#pimg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;     
+    width: 70%; 
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+}
+#ptxt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+}
+#ptxt1{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+#sntxt{
+    margin: 0 auto;
+    text-align: justify;
+    width: 500px;
+    height: auto;
+}
+
+/* Listas de servicios y contactos */
+ul li {
+    margin-bottom: 0.6rem;
+}
+#imgs {
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* Imágenes en servicios */
+#img1 {
+    width: 500px;
+    height: auto;
+}
+#img2 {
+    width: 500px;
+    height: auto;
+}
+#sobre_nosotro{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Formulario */
+form label {
+    font-weight: bold;
+    color: #e10600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #e10600;
+    border-radius: 4px;
+    background-color: #1a1a1a;
+    color: #fff;
+    resize: vertical;
+}
+
+form button {
+    background-color: #e10600;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Footer si lo agregas */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #120000;
+    color: #e10600;
+    font-size: 0.9rem;
+}
+.textd{
+    text-align: center;
+}
+footer {
+    background-color: #120000; /* negro rojizo */
+    color: var(--color-rojo);  /* usa tu variable roja */
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    border-top: 2px solid var(--color-rojo);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
