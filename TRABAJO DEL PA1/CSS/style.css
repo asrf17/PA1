@@ -199,8 +199,8 @@ footer {
     text-align: center;
 }
 footer {
-    background-color: #120000; /* negro rojizo */
-    color: var(--color-rojo);  /* usa tu variable roja */
+    background-color: #120000;
+    color: var(--color-rojo); 
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
